@@ -49,10 +49,18 @@ const questions = ([
         message: 'Cite credits',
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: 'list license',
-      },
+        message: 'Select the license you would like to include',
+        choices: ['MIT License', 'the Unlicense', 'Apache License 2.0'],
+        when: ({confirmLicense}) => {
+            if (confirmLicense) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    },
 
 
 

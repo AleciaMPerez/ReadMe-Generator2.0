@@ -43,11 +43,11 @@ function generateMarkdown(data) {
 
   ## Questions
   Have questions about this project?  
-  GitHub: https://github.com/${data.github}  
+  GitHub: https://github.com/${data.githubUsername}  
   Email: ${data.email}
 
   ## Credits
-  ${data.name}
+  ${data.credits}
 `;
 }
 
