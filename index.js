@@ -75,7 +75,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-
+return inquirer.createPromptModule(questions)
 }
 
 // Function call to initialize app
